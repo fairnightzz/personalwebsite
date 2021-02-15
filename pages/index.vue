@@ -39,7 +39,7 @@
       <v-col cols="4" class="ma-2">
         <v-carousel cycle hide-delimiters :show-arrows="false">
           <v-carousel-item eager  contain src="canoe.jpg"></v-carousel-item>
-          <v-carousel-item eager contain src="chess.jpg"></v-carousel-item>
+          <v-carousel-item eager contain src="chess.JPG"></v-carousel-item>
           <v-carousel-item eager contain src="lake.jpg"></v-carousel-item>
         </v-carousel>
       </v-col>
