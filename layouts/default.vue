@@ -5,9 +5,9 @@
       <v-tabs
         right
       >
-      <v-tab nuxt to="/">Home</v-tab>
-      <v-tab nuxt to="/blog">Blog</v-tab>
-      <v-tab>Resume</v-tab>
+      <v-tab :ripple="false" nuxt to="/">Home</v-tab>
+      <v-tab :ripple="false" nuxt to="/blog">Blog</v-tab>
+      <v-tab :ripple="false">Resume</v-tab>
       </v-tabs>
       </v-app-bar>
         <nuxt />
@@ -26,18 +26,20 @@
         <v-card-title>Contact me at:</v-card-title>
       </v-row>
       <v-card-text>
-        <v-btn
-          v-for="(icon,index) in icons"
-          :key="index"
-          class="mx-4 white--text"
-          icon
-          :href="icon.link"
-          target="blank"
-        >
-          <v-icon size="24px">
+        <v-hover v-slot="{hover}" v-for="(icon,index) in icons"
+            :key="index">
+          <v-btn
+            class="mx-4 white--text pa-6"
+            icon
+            :href="icon.link"
+            target="blank"
+          >
+          <v-icon :size="hover? '35px' : '24px'">
             {{ icon.type }}
           </v-icon>
         </v-btn>
+        </v-hover>
+        
       </v-card-text>
 
       <v-card-text class="white--text pt-0">

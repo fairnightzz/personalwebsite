@@ -1,8 +1,8 @@
 <template>
   <div>
     <v-parallax
-      src = "/cover.jpg" 
-      height="800"
+      src = "/codereach.JPG" 
+      height="700"
       class="mb-16"
     >
     <v-overlay absolute color="black" opacity="0.5">
@@ -59,7 +59,7 @@
 
    <v-row justfiy="center" align="center">
      <v-col cols="12">
-     <h1 class= "text-center" :class="$vuetify.breakpoint.smAndDown ? 'headline' : 'display-1'">Projects</h1>
+     <h1 class= "text-center font-weight-bold"  :class="$vuetify.breakpoint.smAndDown ? 'display-1' : 'display-2'">Projects</h1>
      </v-col>
    </v-row>
 
