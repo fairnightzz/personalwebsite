@@ -20,84 +20,56 @@
           </h2>
         </v-col>
       </v-row>
-      <v-row align="center" justify="center">
-        <v-btn icon bottom @click="$vuetify.goTo('#about')">
-          <v-icon>
-            mdi-arrow-down
-          </v-icon>
-        </v-btn>
-      </v-row>
-  </v-overlay>
+    </v-overlay>
    </v-img> 
 
-   <v-row justfiy="center" align="center" class="mt-6">
-     <v-col cols="12">
-     <h1 class= "text-center font-weight-bold"  :class="$vuetify.breakpoint.smAndDown ? 'display-2' : 'display-3'" id="about">About Me</h1>
-     </v-col>
-   </v-row>
-
+    <v-row justify="center" align="center" class="my-6">
+      <v-col sm="8" xs="8" md="4" lg="4" >
+        <v-card data-aos="fade-up">
+          <v-card-text>
+          <h3 :class="$vuetify.breakpoint.smAndDown ? 'title' : 'headline'">I'm a first year student studying Computer Science at the University of Waterloo.</h3>
+          </v-card-text>
+        </v-card>
+      </v-col>
+      <v-col sm="8" xs="8" md="4" lg="4" >
+        <v-img eager src="/explore.jpg">
+        </v-img>
+      </v-col>
+    </v-row>
 
      <v-row justify="center" align="center" class="my-6">
       <v-col sm="8" xs="8" md="4" lg="4" >
-        <v-carousel light cycle :interval="3000" hide-delimiters hide-delimiter-background :show-arrows="false" >
-          <v-carousel-item >
-            <v-row class="fill-height ma-2" align="center" justify="center" >
-            <v-card class="ma-2">
-              <v-card-text>
-              <h3 :class="$vuetify.breakpoint.smAndDown ? 'title' : 'headline'">I'm a first year student studying Computer Science at the University of Waterloo.</h3>
-              </v-card-text>
-            </v-card>
-            </v-row>
-         </v-carousel-item>
-          <v-carousel-item >
-            <v-row class="fill-height ma-2" align="center" justify="center" >
-            <v-card class="ma-2">
-              <v-card-text>
-              <h3 :class="$vuetify.breakpoint.smAndDown ? 'title' : 'headline'">I love competing in hackathons to challenge my critical thinking and creativity.</h3>
-              </v-card-text>
-            </v-card>
-            </v-row>
-         </v-carousel-item>
-           <v-carousel-item >
-            <v-row class="fill-height ma-2" align="center" justify="center" >
-            <v-card class="ma-2">
-              <v-card-text>
-              <h3 :class="$vuetify.breakpoint.smAndDown ? 'title' : 'headline'">Some of my hobbies include building FPGA and VHDL designs, implementing project management frameworks for personal use, swimming, and managing the Hearthstone Esports Team.</h3>
-              </v-card-text>
-            </v-card>
-            </v-row>
-         </v-carousel-item>
-           <v-carousel-item >
-            <v-row class="fill-height ma-2" align="center" justify="center" >
-            <v-card class="ma-2">
-              <v-card-text>
-              <h3 :class="$vuetify.breakpoint.smAndDown ? 'title' : 'headline'">When I'm not coding, I enjoy exploring the world around me!</h3>
-              </v-card-text>
-            </v-card>
-            </v-row>
-         </v-carousel-item>
- 
-       </v-carousel>
+        <v-img eager src="/hackathons/masseyhacks.jpg"></v-img>  
       </v-col>
  
       <v-col sm="8" xs="8" md="4" lg="4" >
+        <v-card data-aos="fade-up">
+          <v-card-text>
+          <h3 :class="$vuetify.breakpoint.smAndDown ? 'title' : 'headline'">I love competing in hackathons to challenge my critical thinking and creativity.</h3>
+          </v-card-text>
+        </v-card>
+      </v-col>
+   </v-row>
+
+     <v-row justify="center" align="center" class="my-6">
+      <v-col sm="8" xs="8" md="4" lg="4" >
+        <v-card data-aos="fade-up">
+          <v-card-text>
+          <h3 :class="$vuetify.breakpoint.smAndDown ? 'title' : 'headline'">Some of my hobbies include building FPGA and VHDL designs, implementing project management frameworks for personal use, swimming, and managing the Hearthstone Esports Team.</h3>
+          </v-card-text>
+        </v-card>
+      </v-col>
+      <v-col sm="8" xs="8" md="4" lg="4" >
         <v-carousel cycle :interval="3000" hide-delimiters hide-delimiter-background class="ma-0 pa-0">
-          <v-carousel-item eager  contain src="/profile.jpg"></v-carousel-item>
-          <v-carousel-item eager contain src="/hackathons/masseyhacks.jpg"></v-carousel-item>
-          <v-carousel-item eager contain src="/hobbies/digitalcircuits.png"></v-carousel-item>
-          <v-carousel-item eager contain src="/explore/canoe.jpg"></v-carousel-item>
+          <v-carousel-item eager  contain src="/hobbies/digitalcircuits.png"></v-carousel-item>
+          <v-carousel-item eager contain src="/hobbies/kanban.png"></v-carousel-item>
+          <v-carousel-item eager contain src="/hobbies/swim.jpg"></v-carousel-item>
+          <v-carousel-item eager contain src="hobbies/hearthstone.png"></v-carousel-item>
         </v-carousel>
       </v-col>
    </v-row>
-      <v-row align="center" justify="center">
-        <v-btn icon bottom @click="$vuetify.goTo('#skills')">
-          <v-icon>
-            mdi-arrow-down
-          </v-icon>
-        </v-btn>
-      </v-row>
- 
-   <v-row justify="center" align="center" class="my-6" id="skills">
+
+   <v-row justify="center" align="center" class="my-6">
      <v-col cols="12">
        <v-parallax src="hackathons/hackthenorth.jpg" height="300">
         <v-overlay absolute black opacity="0.6">
@@ -108,15 +80,27 @@
 
      </v-col>
    </v-row>
-      <v-row align="center" justify="center">
-        <v-btn icon bottom @click="$vuetify.goTo('#projects')">
-          <v-icon>
-            mdi-arrow-down
-          </v-icon>
-        </v-btn>
-      </v-row>
- 
-   <v-row justfiy="center" align="center" class="mt-6" id="projects">
+
+
+     <v-row justify="center" align="center" class="my-6" >
+      <v-col sm="8" xs="8" md="4" lg="4">
+        <v-card data-aos="fade-up">
+          <v-card-text>
+          <h3 :class="$vuetify.breakpoint.smAndDown ? 'title' : 'headline'">When I'm not coding, I enjoy exploring the world around me! </h3>
+          </v-card-text>
+        </v-card>
+      </v-col>
+      <v-col sm="8" xs="8" md="4" lg="4" >
+        <v-carousel cycle :interval="3000" hide-delimiters hide-delimiter-background >
+          <v-carousel-item eager  contain src="/explore/canoe.jpg"></v-carousel-item>
+          <v-carousel-item eager contain src="/explore/me.JPG"></v-carousel-item>
+          <v-carousel-item eager contain src="/explore/lake.jpg"></v-carousel-item>
+        </v-carousel>
+      </v-col>
+   </v-row>
+
+
+   <v-row justfiy="center" align="center" class="mt-6">
      <v-col cols="12">
      <h1 class= "text-center font-weight-bold"  :class="$vuetify.breakpoint.smAndDown ? 'display-2' : 'display-3'">Projects</h1>
      </v-col>
@@ -143,7 +127,7 @@
        </v-container> 
     </v-row>
 
-   <v-row justfiy="center" align="center" class="mt-6" id="experience">
+   <v-row justfiy="center" align="center" class="mt-6">
      <v-col cols="12">
      <h1 class= "text-center font-weight-bold"  :class="$vuetify.breakpoint.smAndDown ? 'display-2' : 'display-3'">Experience</h1>
      </v-col>

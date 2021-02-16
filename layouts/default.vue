@@ -4,10 +4,12 @@
       <v-app-bar fixed app dense>
       <v-tabs
         right
+        background-color="black"
+        dark
       >
       <v-tab :ripple="false" nuxt to="/">Home</v-tab>
       <v-tab :ripple="false" nuxt to="/blog">Blog</v-tab>
-      <v-tab :ripple="false">Resume</v-tab>
+      <v-tab :ripple="false"  target="blank" href="/resume/Zhehai Zhang Resume.pdf">Resume</v-tab>
       </v-tabs>
       </v-app-bar>
         <nuxt />
