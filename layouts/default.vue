@@ -43,7 +43,7 @@
       </v-card-text>
 
       <v-card-text class="white--text pt-0">
-        Made with &#128151 
+        Made with &#128151;
       </v-card-text>
 
       <v-divider></v-divider>
