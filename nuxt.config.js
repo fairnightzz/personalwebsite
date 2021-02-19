@@ -12,8 +12,8 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: "Hi, I'm Zhehai, and welcome to my website! I've dabbled in augmented reality applications, command line interfaces , tons of web apps, REST apis, and database management." },
-      { property: 'og:image', content: 'codereach.JPG'},
-      { name: 'twitter:card', content:'summary_large_image'}
+      { hid: 'og:image', name: 'og:image', content: 'codereach.JPG'},
+      { hid: 'twitter:card', name: 'twitter:card', content:'summary_large_image'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -41,7 +41,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
+  modules: [ '@nuxt/content', '@nuxtjs/sitemap'
   ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify

@@ -9,7 +9,9 @@
     "generate": "nuxt-ts generate"
   },
   "dependencies": {
+    "@nuxt/content": "^1.13.1",
     "@nuxt/typescript-runtime": "^2.0.1",
+    "@nuxtjs/sitemap": "^2.4.0",
     "aos": "^3.0.0-beta.6",
     "core-js": "^3.8.3",
     "nuxt": "^2.14.12"

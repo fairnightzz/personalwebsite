@@ -1,33 +1,38 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card data-aos="fade-up">
-        <v-card-title class="headline">
-          Welcome to my fake blog
-        </v-card-title>
-        <v-card-text>
-          <p>My blog will take some time to make lmoa
-          </p>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn>
-          Comment or something
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-col>
-  </v-row>
+  <Default title="Blog">
+    <!-- loop through each post -->
+    <PostContainer 
+      v-for="p in posts" v-bind:key="p.slug"
+      :title="p.title"
+      :desc="p.description"
+      :slug="p.slug"
+    ></PostContainer>
+  </Default>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
-
 export default {
-  components: {
-    Logo,
-    VuetifyLogo
+  data() {
+    return {
+      posts: [],
+    }
+  },
+  head() {
+    return {
+      title: `Blog`,
+      meta: [
+        { hid: 'description', name: 'description', content: `This is Zhehai's blog.` }
+      ]
+    }
+  },
+  async fetch() {
+    this.posts = await this.$content('articles').fetch()
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.post-container + .post-container {
+  margin-top: 0.5em;
+}
+</style>
