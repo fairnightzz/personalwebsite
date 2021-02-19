@@ -8,7 +8,7 @@
     <v-overlay absolute color="black" opacity="0.5">
       <v-row>
         <v-col cols = "8" class="ma-2" >
-          <h1 data-aos="fade-up" class="display-3 font-weight-medium">
+          <h1 class="display-3 font-weight-medium">
           Hi, I'm Zhehai (Mark) Zhang. 
           </h1>   
         </v-col>
@@ -32,7 +32,7 @@
 
    <v-row justfiy="center" align="center" class="mt-6">
      <v-col cols="12">
-     <h1 class= "text-center font-weight-bold"  :class="$vuetify.breakpoint.smAndDown ? 'display-2' : 'display-3'" id="about">About Me</h1>
+     <h2 class= "text-center font-weight-bold"  :class="$vuetify.breakpoint.smAndDown ? 'display-2' : 'display-3'" id="about">About Me</h2>
      </v-col>
    </v-row>
 
@@ -118,7 +118,7 @@
  
    <v-row justfiy="center" align="center" class="mt-6" id="projects">
      <v-col cols="12">
-     <h1 class= "text-center font-weight-bold"  :class="$vuetify.breakpoint.smAndDown ? 'display-2' : 'display-3'">Projects</h1>
+     <h2 class= "text-center font-weight-bold"  :class="$vuetify.breakpoint.smAndDown ? 'display-2' : 'display-3'">Projects</h2>
      </v-col>
    </v-row>
 
@@ -145,7 +145,7 @@
 
    <v-row justfiy="center" align="center" class="mt-6" id="experience">
      <v-col cols="12">
-     <h1 class= "text-center font-weight-bold"  :class="$vuetify.breakpoint.smAndDown ? 'display-2' : 'display-3'">Experience</h1>
+     <h2 class= "text-center font-weight-bold"  :class="$vuetify.breakpoint.smAndDown ? 'display-2' : 'display-3'">Experience</h2>
      </v-col>
    </v-row>
 
@@ -175,13 +175,9 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
 
 export default {
   components: {
-    Logo,
-    VuetifyLogo
   },
   data: () => {
     return {

@@ -1,8 +1,11 @@
 <template>
-  <nuxt-link class="post-container" :to="`/articles/${slug}`">
-    <h3>{{ title }}</h3>
-    <div>{{ desc }}</div>
-  </nuxt-link>
+
+    <v-col cols="10" class="ma-2">
+        <nuxt-link class="post-container" :to="`/articles/${slug}`">
+            <h3>{{ title }}</h3>
+            <div>{{ desc }}</div>
+        </nuxt-link>
+    </v-col>
 </template>
 
 <script>

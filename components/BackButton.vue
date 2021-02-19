@@ -1,6 +1,8 @@
 <template>
   <div>
-    <nuxt-link :to="backLink">&lt; back</nuxt-link>
+      <v-btn rounded nuxt :to="backLink">
+        &lt; Back
+      </v-btn>
   </div>
 </template>
 

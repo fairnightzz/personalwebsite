@@ -1,12 +1,15 @@
 <template>
   <Default title="Blog">
     <!-- loop through each post -->
+    <v-row align="center" justify="center">
+
     <PostContainer 
       v-for="p in posts" v-bind:key="p.slug"
       :title="p.title"
       :desc="p.description"
       :slug="p.slug"
     ></PostContainer>
+    </v-row>
   </Default>
 </template>
 
