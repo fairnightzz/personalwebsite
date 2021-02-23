@@ -1,11 +1,18 @@
 <template>
 
-    <v-col cols="10" class="ma-2">
-        <nuxt-link class="post-container" :to="`/articles/${slug}`">
-            <h3>{{ title }}</h3>
-            <div>{{ desc }}</div>
-        </nuxt-link>
-    </v-col>
+    <v-cols justify="space-between" align="center" class="ma-2">
+        <v-hover v-slot="{hover}">
+          <v-card width="500" height="400" :elevation="hover ? 12 : 2" class="transition-swing">
+            <nuxt-link class="post-container" :to="`/articles/${slug}`">
+              <v-img :src="img" eager height="300" max-width="500" class="white--text align-end">
+                <v-card-title class="font-weight-bold">{{title}}</v-card-title>
+              </v-img>
+              <v-card-text>{{desc}}</v-card-text>
+            </nuxt-link>
+          </v-card>
+
+        </v-hover>
+    </v-cols>
 </template>
 
 <script>
@@ -19,6 +26,10 @@ export default {
       type: String,
       default: "Description"
     },
+    img: {
+      type: String,
+      default: "Image"
+    },
     slug: {
       type: String,
       default: "/"
@@ -29,17 +40,9 @@ export default {
 
 <style lang="scss" scoped>
 .post-container {
-  display: block;
   color: unset;
   text-decoration: unset;
 
-  padding: 1.3em;
-  border: 1px solid #eee;
-  border-radius: 0.4em;
 
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0.5em;
-  }
 }
 </style>

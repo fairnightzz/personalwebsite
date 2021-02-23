@@ -2,14 +2,15 @@
   <Default title="Blog">
     <!-- loop through each post -->
     <v-row align="center" justify="center">
-
-    <PostContainer 
-      v-for="p in posts" v-bind:key="p.slug"
-      :title="p.title"
-      :desc="p.description"
-      :slug="p.slug"
-    ></PostContainer>
-    </v-row>
+        <PostContainer 
+          v-for="p in posts" v-bind:key="p.slug"
+          :title="p.title"
+          :desc="p.description"
+          :img="p.img"
+          :slug="p.slug"
+          class="flex-item"
+        ></PostContainer>
+   </v-row>
   </Default>
 </template>
 
@@ -24,7 +25,7 @@ export default {
     return {
       title: `Blog`,
       meta: [
-        { hid: 'description', name: 'description', content: `This is Zhehai's blog.` }
+        { hid: 'description', name: 'description', content: `Welcome to my blog! Here, I post just about anything that interests me.` }
       ]
     }
   },
@@ -37,5 +38,12 @@ export default {
 <style lang="scss" scoped>
 .post-container + .post-container {
   margin-top: 0.5em;
+}
+
+.blogcontainer {
+  display: flex;
+  flex: column;
+  justify-content: center;
+  align-items: center;
 }
 </style>

@@ -39,7 +39,7 @@
 
      <v-row justify="center" align="center" class="my-6">
       <v-col sm="8" xs="8" md="4" lg="4" >
-        <v-carousel light cycle :interval="3000" hide-delimiters hide-delimiter-background :show-arrows="false" >
+        <v-carousel cycle :interval="3000" hide-delimiters hide-delimiter-background :show-arrows="false" >
           <v-carousel-item >
             <v-row class="fill-height ma-2" align="center" justify="center" >
             <v-card class="ma-2">
@@ -81,7 +81,7 @@
       </v-col>
  
       <v-col sm="8" xs="8" md="4" lg="4" >
-        <v-carousel cycle :interval="3000" hide-delimiters hide-delimiter-background class="ma-0 pa-0">
+        <v-carousel cycle :interval="3000" hide-delimiters hide-delimiter-background :show-arrows="false" class="ma-0 pa-0">
           <v-carousel-item eager  contain src="/profile.jpg"></v-carousel-item>
           <v-carousel-item eager contain src="/hackathons/masseyhacks.jpg"></v-carousel-item>
           <v-carousel-item eager contain src="/hobbies/digitalcircuits.png"></v-carousel-item>
@@ -123,9 +123,9 @@
    </v-row>
 
    <v-row justify="center" align="center" >
-     <v-container class = "d-flex flex-wrap align-content-space-around" align="center" justify="center">
+     <v-container class = "d-flex flex-wrap" align="center" align-items="center" justify="center">
         <v-hover v-slot="{hover}" v-for="(project,index) in projects" :key="index">
-          <v-col  xs="8" sm="5" md = "4" lg="4">
+          <v-col  xs="8" sm="6" md = "4" lg="4">
             <v-card flat data-aos="flip-up">
               <v-img :src="project.imgsrc" eager height="400">
                 <v-expand-transition>
@@ -143,7 +143,7 @@
        </v-container> 
     </v-row>
 
-   <v-row justfiy="center" align="center" class="mt-6" id="experience">
+   <v-row justify="center" align="center" class="mt-6" id="experience">
      <v-col cols="12">
      <h2 class= "text-center font-weight-bold"  :class="$vuetify.breakpoint.smAndDown ? 'display-2' : 'display-3'">Experience</h2>
      </v-col>
@@ -152,7 +152,7 @@
    <v-row justify="center" align="center" >
      <v-container class = "d-flex flex-wrap align-content-space-around" align="center" justify="center">
         <v-hover v-slot="{hover}" v-for="(experience,index) in experiences" :key="index">
-          <v-col  xs="8" sm="5" md = "4" lg="4">
+          <v-col  xs="8" sm="6" md = "4" lg="4">
             <v-card flat data-aos="flip-up">
               <v-img :src="experience.imgsrc" eager height="400">
                 <v-expand-transition>

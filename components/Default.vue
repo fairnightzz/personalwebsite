@@ -15,7 +15,7 @@
             <BackButton v-if="backLink" :backLink="backLink" class="my-2" />
 
             <!-- page does not have to have a title -->
-            <h1 v-if="title">{{ title }}</h1>
+            <h1 class="display-2 font-weight-bold text-center mt-6" v-if="title">{{ title }}</h1>
 
             <!-- not all pages have dates, only posts do -->
             <div v-if="date" class="date">
@@ -25,7 +25,7 @@
           </v-col>
       </v-row>
       
-      <slot></slot>
+    <slot></slot>
     </main>
   </div>
 </template>
