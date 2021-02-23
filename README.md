@@ -1,4 +1,5 @@
 # personalwebsite
+Personal website with homepage, blog, and resume.
 
 ## Build Setup
 
