@@ -1,3 +1,15 @@
+---
+title: HTN Frontend Challenge and What I did
+description: Wrestled with persistent state, and made a nice nuxt web app!
+img: https://madewithnetwork.ams3.cdn.digitaloceanspaces.com/spatie-space-production/3075/nuxtjs-2.jpg
+alt: HTN Frontend Challenge
+author: 
+  name: Zhehai Zhang
+  img: https://images.unsplash.com/photo-1533636721434-0e2d61030955?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80
+tags: 
+  - hackthenorth
+  - frontend
+---
 # HTN-Frontend-Challenge
 View my frontend in action [here](https://htnweb.zhehaizhang.com)
 Email: bairddixon@frolix.com

@@ -1,3 +1,15 @@
+---
+title: HTN Backend Challenge and What I did
+description: Tried out GraphQL for the first time! Learn what I did.
+img: https://davidwalsh.name/demo/graphql-intro/graphql.png
+alt: HTN Backend Challenge
+author: 
+  name: Zhehai Zhang
+  img: https://images.unsplash.com/photo-1533636721434-0e2d61030955?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80
+tags: 
+  - hackthenorth
+  - Backend
+---
 # HTN-Backend-Challenge
 This is my backend challenge.
 Test it out [here](https://htn.zhehaizhang.com/graphql)
