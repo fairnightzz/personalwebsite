@@ -24,7 +24,6 @@ Hey guys, this is my first blog post of 2021. I hope to update this weekly (or m
 * *Italicized stuff*
 * `code` 
 * [A link](https://zhehaizhang.com/blog)
-* ![image|50x50](../../codereach.JPG)
 
 <img src="../../codereach.JPG" height=300></img>
 ```js[nuxt.config.js]
