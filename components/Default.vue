@@ -15,8 +15,12 @@
             <BackButton v-if="backLink" :backLink="backLink" class="my-2" />
 
             <!-- page does not have to have a title -->
+            <v-row align="center" justify="center">
             <h1 class="display-2 font-weight-bold text-center mt-6" v-if="title">{{ title }}</h1>
-
+            <v-btn icon target="_blank" href="http://zhehaizhang.com/feed/articles/rss.xml">
+                <v-icon>mdi-rss</v-icon>
+            </v-btn>
+            </v-row>
             <!-- not all pages have dates, only posts do -->
             <div v-if="date" class="date">
                 Last updated:
@@ -50,7 +54,7 @@ export default {
     dateDisplay() {
       // convert the long date to an easy to read date
       const date = new Date(this.date);
-      return `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`
+      return `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`
     }
   },
 }

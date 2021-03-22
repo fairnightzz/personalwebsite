@@ -1,5 +1,5 @@
 ---
-title: HTN Frontend Challenge and What I did
+title: HTN Frontend Challenge
 description: Wrestled with persistent state, and made a nice nuxt web app!
 img: https://madewithnetwork.ams3.cdn.digitaloceanspaces.com/spatie-space-production/3075/nuxtjs-2.jpg
 alt: HTN Frontend Challenge
@@ -9,6 +9,7 @@ author:
 tags: 
   - hackthenorth
   - frontend
+date: 15 March 2021
 ---
 # HTN-Frontend-Challenge
 View my frontend in action [here](https://htnweb.zhehaizhang.com)

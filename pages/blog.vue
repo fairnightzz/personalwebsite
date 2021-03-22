@@ -1,5 +1,6 @@
 <template>
   <Default title="Blog">
+    
     <!-- loop through each post -->
     <v-row align="center" justify="center">
         <PostContainer 
@@ -30,7 +31,7 @@ export default {
     }
   },
   async fetch() {
-    this.posts = await this.$content('articles').fetch()
+    this.posts = await this.$content('articles').sortBy('date','asc').fetch()
   }
 }
 </script>

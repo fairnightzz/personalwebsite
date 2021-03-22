@@ -1,4 +1,15 @@
 import colors from 'vuetify/es5/util/colors'
+const createSitemapRoutes = async () => {
+  let routes = [];
+  const { $content } = require('@nuxt/content')
+  var posts = null
+  if (posts === null || posts.length === 0)
+    posts = await $content('articles').fetch();
+  for (const post of posts) {
+    routes.push(`blog/${post.slug}`);
+  }
+  return routes;
+}
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -42,8 +53,46 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [ '@nuxt/content', '@nuxtjs/sitemap'
+  modules: [ '@nuxt/content', '@nuxtjs/feed', '@nuxtjs/sitemap'
   ],
+  feed () {
+    const baseUrlArticles = 'https://zhehaizhang.com/blog'
+    const baseLinkFeedArticles = '/feed/articles'
+    const feedFormats = {
+      rss: { type: 'rss2', file: 'rss.xml' },
+      json: { type: 'json1', file: 'feed.json' },
+    }
+    const { $content } = require('@nuxt/content')
+
+    const createFeedArticles = async function (feed) {
+      feed.options = {
+        title: 'My Blog',
+        description: "Zhehai's Blog",
+        link: baseUrlArticles,
+      }
+      const articles = await $content('articles').fetch()
+
+      articles.forEach((article) => {
+        const url = `${baseUrlArticles}/${article.slug}`
+
+        feed.addItem({
+          title: article.title,
+          id: url,
+          link: url,
+          date: article.published,
+          description: article.summary,
+          content: article.summary,
+          author: article.authors,
+        })
+      })
+    }
+
+    return Object.values(feedFormats).map(({ file, type }) => ({
+      path: `${baseLinkFeedArticles}/${file}`,
+      type: type,
+      create: createFeedArticles,
+    }))
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
@@ -68,6 +117,11 @@ export default {
         family: 'Montserrat'
       }
     }
+  },
+  sitemap: {
+    hostname: 'https://zhehaizhang.com',
+    gzip: true,
+    routes: createSitemapRoutes
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

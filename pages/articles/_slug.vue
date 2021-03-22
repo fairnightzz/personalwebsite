@@ -2,7 +2,7 @@
   <Default 
     :title="doc.title" 
     backLink="/blog"
-    :date="doc.updatedAt.toString()"
+    :date="doc.date"
   >
   <v-row align="center" justify="center">
     <v-col cols="10" class="ma-2">

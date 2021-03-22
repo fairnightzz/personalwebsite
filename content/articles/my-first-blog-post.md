@@ -1,14 +1,15 @@
 ---
 title: My First Blog Post
 description: Intro to my website and blog using cool stuff!
-img: https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60
+img: ../../explore/lake.jpg
 alt: my first blog post
 author: 
   name: Zhehai Zhang
-  img: https://images.unsplash.com/photo-1533636721434-0e2d61030955?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80
+  img: 
 tags: 
   - firstblog
   - start
+date: 2021-2-15
 ---
 
 

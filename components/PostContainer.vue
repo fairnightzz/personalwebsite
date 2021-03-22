@@ -4,9 +4,9 @@
         <v-hover v-slot="{hover}">
           <v-card width="500" height="400" :elevation="hover ? 12 : 2" class="transition-swing">
             <nuxt-link class="post-container" :to="`/articles/${slug}`">
-              <v-img :src="img" eager height="300" max-width="500" class="white--text align-end">
-                <v-card-title class="font-weight-bold">{{title}}</v-card-title>
+              <v-img :src="img" eager height="300" max-width="500" class="align-end">
               </v-img>
+              <v-card-title class="font-weight-bold">{{title}}</v-card-title>
               <v-card-text>{{desc}}</v-card-text>
             </nuxt-link>
           </v-card>
