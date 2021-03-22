@@ -6,7 +6,7 @@ const createSitemapRoutes = async () => {
   if (posts === null || posts.length === 0)
     posts = await $content('articles').fetch();
   for (const post of posts) {
-    routes.push(`blog/${post.slug}`);
+    routes.push(`articles/${post.slug}`);
   }
   return routes;
 }
@@ -56,7 +56,7 @@ export default {
   modules: [ '@nuxt/content', '@nuxtjs/feed', '@nuxtjs/sitemap'
   ],
   feed () {
-    const baseUrlArticles = 'https://zhehaizhang.com/blog'
+    const baseUrlArticles = 'https://zhehaizhang.com/articles'
     const baseLinkFeedArticles = '/feed/articles'
     const feedFormats = {
       rss: { type: 'rss2', file: 'rss.xml' },
@@ -66,8 +66,8 @@ export default {
 
     const createFeedArticles = async function (feed) {
       feed.options = {
-        title: 'My Blog',
-        description: "Zhehai's Blog",
+        title: "Zhehai's Blog",
+        description: "Welcome to Zhehai's Blog",
         link: baseUrlArticles,
       }
       const articles = await $content('articles').fetch()
