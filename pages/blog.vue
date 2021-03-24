@@ -31,7 +31,7 @@ export default {
     }
   },
   async fetch() {
-    this.posts = await this.$content('articles').sortBy('date','asc').fetch()
+    this.posts = await this.$content('articles').sortBy('date','desc').fetch()
   }
 }
 </script>

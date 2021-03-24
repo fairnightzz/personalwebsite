@@ -9,7 +9,7 @@ author:
 tags: 
   - martial arts
   - novels
-date: 23 March 2021
+date: 2021-03-23
 ---
 # Evaluation: What Martial World does differently from others
 

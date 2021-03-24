@@ -9,7 +9,7 @@ author:
 tags: 
   - hackthenorth
   - frontend
-date: 15 March 2021
+date: 2021-03-15
 ---
 # HTN-Frontend-Challenge
 View my frontend in action [here](https://htnweb.zhehaizhang.com)

@@ -15,7 +15,7 @@
             <BackButton v-if="backLink" :backLink="backLink" class="my-2" />
 
             <!-- page does not have to have a title -->
-            <v-row align="center" justify="center">
+            <v-row align="center" justify="center" class = "my-2">
             <h1 class="display-2 font-weight-bold text-center mt-6" v-if="title">{{ title }}</h1>
             <v-btn icon target="_blank" href="http://zhehaizhang.com/feed/articles/rss.xml">
                 <v-icon>mdi-rss</v-icon>

@@ -6,7 +6,7 @@
   >
   <v-row align="center" justify="center">
     <v-col cols="10" class="ma-2">
-      <nuxt-content :document="doc" />
+      <nuxt-content class="prose lg:prose-xl" :document="doc" />
     </v-col>
   </v-row>
   </Default>

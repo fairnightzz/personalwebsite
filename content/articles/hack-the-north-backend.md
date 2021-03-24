@@ -9,7 +9,7 @@ author:
 tags: 
   - hackthenorth
   - Backend
-date: 15 March 2021
+date: 2021-03-15
 ---
 # HTN-Backend-Challenge
 This is my backend challenge.
