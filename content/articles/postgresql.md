@@ -45,6 +45,7 @@ Get into the postgresql server by
 ## PostgreSQL database dump
 
 ```pg_dump [database name] -U postgres -h localhost > template``` to backup database
+
 ```psql -h localhost -d [database name] -U [username] -f template``` to add database to existing db
 
 Note: the user may not have permision, so you could alter the user if you really wanted to.
