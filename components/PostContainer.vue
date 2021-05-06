@@ -1,6 +1,6 @@
 <template>
 
-    <v-cols justify="space-between" align="center" class="ma-2">
+    <div justify="space-between" align="center" class="ma-2">
         <v-hover v-slot="{hover}">
           <v-card width="600" height="450" :elevation="hover ? 12 : 2" class="transition-swing">
             <nuxt-link class="post-container" :to="`/articles/${slug}`">
@@ -12,7 +12,7 @@
           </v-card>
 
         </v-hover>
-    </v-cols>
+    </div>
 </template>
 
 <script>

@@ -54,7 +54,7 @@ export default {
     dateDisplay() {
       // convert the long date to an easy to read date
       const date = new Date(this.date);
-      return `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`
+      return date.toDateString()
     }
   },
 }

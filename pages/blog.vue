@@ -31,7 +31,10 @@ export default {
     }
   },
   async fetch() {
-    this.posts = await this.$content('articles').sortBy('date','desc').fetch()
+    this.posts = await this.$content('articles').fetch()
+    this.posts = this.posts.sort((a,b) => (new Date(b.date) - new Date(a.date)))
+    //console.log(this.posts)
+
   }
 }
 </script>
