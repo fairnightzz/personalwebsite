@@ -126,7 +126,7 @@
      <v-container class = "d-flex flex-wrap" align="center" align-items="center" justify="center">
         <v-hover v-slot="{hover}" v-for="(project,index) in projects" :key="index">
           <v-col  xs="8" sm="6" md = "4" lg="4">
-            <v-card flat data-aos="flip-up">
+            <v-card flat data-aos="flip-up" :href ="project.link" target="_blank">
               <v-img :src="project.imgsrc" eager height="400">
                 <v-expand-transition>
                   <v-overlay v-if="hover" absolute color="purple" opacity="0.8">
@@ -153,17 +153,18 @@
      <v-container class = "d-flex flex-wrap align-content-space-around" align="center" justify="center">
         <v-hover v-slot="{hover}" v-for="(experience,index) in experiences" :key="index">
           <v-col  xs="8" sm="6" md = "4" lg="4">
-            <v-card flat data-aos="flip-up">
+            <v-card flat data-aos="flip-up" :href ="experience.link" target="_blank">
               <v-img :src="experience.imgsrc" eager height="400">
                 <v-expand-transition>
                   <v-overlay v-if="hover" absolute color="purple" opacity="0.8">
-                    <v-card-text  align="center" class="white--text body-1">
+                    <v-card-text link align="center" class="white--text body-1">
                       {{experience.description}}
                     </v-card-text>
                   </v-overlay >
                </v-expand-transition>
              </v-img>
               <v-card-title>{{experience.name}}</v-card-title>
+              <v-card-subtitle>{{experience.role}}</v-card-subtitle>
             </v-card>
           </v-col>
           </v-hover> 
@@ -182,12 +183,15 @@ export default {
   data: () => {
     return {
       projects: [
-        {name: "Subspace", description:"Won HackTheNorth 2020++. Work side-by-side again during COVID? Subspace gives you cloud-based desktops for remote collaboration, allowing you to instantaneously share your computing environment with others.", imgsrc: "/projects/subspace.jpg"},
-        {name: "9it - Version Control System", description: "totally not git! 9it-cli is a lightweight version control system that is intended for individual use.", imgsrc: "/projects/9it.png"},
-        {name: "Tinderwal", description:"Vote for the favourite pictures of your friends, Tinder style!", imgsrc: "/projects/tinderwal.png"},
-        {name: "AR-itus", description:"Rehabilitating individuals who are suffering with hand-eye coordination problems with the use of Augmented Reality technology.", imgsrc: "/projects/aritus.png"},
-        {name: "Teleclinic", description: "Online medical clinic for your apppointments and walk-ins, seamlessly.", imgsrc: "/projects/teleclinic.jpg"},
-        {name: "Quizzikal", description: "A competitive educational trivia web application.", imgsrc: "/projects/quizzikal.jpg"},
+        {name: "Subspace", description:"Won HackTheNorth 2020++. Work side-by-side again during COVID? Subspace gives you cloud-based desktops for remote collaboration, allowing you to instantaneously share your computing environment with others.", 
+        imgsrc: "/projects/subspace.jpg", link: "https://devpost.com/software/subspace"},
+        {name: "9it - Version Control System", description: "totally not git! 9it-cli is a lightweight version control system that is intended for individual use.", imgsrc: "/projects/9it.png", link: "https://github.com/NaiveGit/9it-cli"},
+        {name: "Discourse VR", description: "A remote solution for feedback/recording of virtual parliamentary debates", imgsrc: "/projects/discoursevr.jpg", link: "https://devpost.com/software/discoursevr"},
+        {name: "VR Open World Game", description: "An Open World VR Sword fighting game using Unity, Windows Mixed Reality Headset, and Xbox 360 Kinect Sensors", imgsrc: "/projects/vropenworld.gif", link: "https://github.com/Breality/ICS4U-FSEV2"},
+        {name: "AR-itus", description:"Rehabilitating individuals who are suffering with hand-eye coordination problems with the use of Augmented Reality technology.", imgsrc: "/projects/aritus.png", link: "https://devpost.com/software/ar-itus"},
+        {name: "Teleclinic", description: "Online medical clinic for your apppointments and walk-ins, seamlessly.", imgsrc: "/projects/teleclinic.jpg", link: "https://devpost.com/software/teleclinic"},
+        {name: "Quizzikal", description: "A competitive educational trivia web application.", imgsrc: "/projects/quizzikal.jpg", link: "https://devpost.com/software/quizzical-3k7ygv"},
+        {name: "Tinderwal", description:"Vote for the favourite pictures of your friends, Tinder style!", imgsrc: "/projects/tinderwal.png", link: "https://github.com/fairnightzz/Tinderwal"}
       ],
       skills: [
         {name: "Linux Administration"},
@@ -205,11 +209,14 @@ export default {
         {name: "Adobe Suite"},
       ],
       experiences: [
-        {name: "CodeReach", description:"CodeReach helps create the foundation of computer science for elementary school students. I prepared lesson materials and taught the Python programming language as a teacher.", imgsrc: "/experience/codereach.png"},
-        {name: "MIT Media Lab", description: "Developed augmented reality systems in C# using HTC Vive Pro headset and Leap Motion Orion for dynamic depth analysis.", imgsrc: "/experience/mit.png"},
-        {name: "City Swim Instructor", description:"Taught swimming lessons for over 10 swimmer levels at the Lifesaving Society Standard.", imgsrc: "/experience/swim.jpg"},
-        {name: "CaYPT", description:"National Physics Competition where our team was tasked to solve 10 open-ended physics problems by conducting research, experiments, and simulations.", imgsrc: "/experience/caypt.png"},
-        {name: "SHAD Enrichment Program", description: "Lead a business team for Flood Watch, an app designed to help people in flood prone areas in times of need.", imgsrc: "/experience/shad.JPG"},
+        {name: "CodeReach", role: "Teacher", description:"CodeReach helps create the foundation of computer science for elementary school students. I prepared lesson materials and taught the Python programming language as a teacher.", imgsrc: "/experience/codereach.png"},
+        {name: "MasseyHacks VI", role: "Executive", description:"Managed logistics behind workshop livestreams, and designed graphics for the event.", imgsrc: "/experience/masseyhacks.png"},
+        {name: "Computer Science Club", role: "Junior Leader", description:"Taught competitive programming techniques and algorithms to high school students. Organized local programming competitions on self-hosted online judge.", imgsrc: "/experience/csclub.png"},
+        {name: "Chess Club", role: "Leader", description:"Organized official qualifier tournaments for the annual Ontario Chess Championships. Lead the team to win the Ontario High School Chess Tournament 2 years in a row.", imgsrc: "/experience/chess.png"},
+        {name: "MIT Media Lab", role: "Participant", description: "Developed augmented reality systems in C# using HTC Vive Pro headset and Leap Motion Orion for dynamic depth analysis.", imgsrc: "/experience/mit.png"},
+        {name: "City of Windsor & Lasalle", role: "Swim Instructor", description:"Taught swimming lessons for over 10 swimmer levels at the Lifesaving Society Standard.", imgsrc: "/experience/swim.jpg"},
+        {name: "CaYPT Bronze Medalist", role: "Competitor", description:"National Physics Competition where our team was tasked to solve 10 open-ended physics problems by conducting research, experiments, and simulations.", imgsrc: "/experience/caypt.png"},
+        {name: "SHAD Enrichment Program", role: "Participant", description: "Lead a business team for Flood Watch, an app designed to help people in flood prone areas in times of need.", imgsrc: "/experience/shad.JPG"},
       ]
     }
   },

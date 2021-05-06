@@ -25,7 +25,7 @@
       class="black lighten-1 white--text text-center pt-4"
     >
       <v-row align="center" justify="center">
-        <v-card-title>Contact me at:</v-card-title>
+        <v-card-title>Contact Me</v-card-title>
       </v-row>
       <v-card-text>
         <v-hover v-slot="{hover}" v-for="(icon,index) in icons"
