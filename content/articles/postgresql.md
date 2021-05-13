@@ -24,29 +24,52 @@ right commands. So, look no further, for I've compiled a cheat sheet of most com
 Assuming that you have postgres already installed, 
 start postgres service with 
 
-```sudo service postgresql start```
+```bash
+sudo service postgresql start
+```
 
 Get into the postgresql server by
 
-```sudo -u postgres psql```
+```bash
+sudo -u postgres psql
+```
 
 ## Postgres Commands
 
-```\l``` Lists all databases
+```sql
+\l
+``` 
+Lists all databases
 
-```\c [name of database]``` to connect to actual database
+```sql
+\c [name of database]
+``` 
+to connect to actual database
 
-```\d [name of table/nothing]``` for a description of table/tables
+```sql
+\d [name of table/nothing]
+``` 
+for a description of table/tables
 
-```CREATE DATABASE [database name]```
+```sql
+CREATE DATABASE [database name]
+```
 
-```grant all privileges on database [database name] to [username]```
+```sql
+grant all privileges on database [database name] to [username]
+```
 
 ## PostgreSQL database dump
 
-```pg_dump [database name] -U postgres -h localhost > template``` to backup database
+```sql
+pg_dump [database name] -U postgres -h localhost > template
+``` 
+to backup database
 
-```psql -h localhost -d [database name] -U [username] -f template``` to add database to existing db
+```sql
+psql -h localhost -d [database name] -U [username] -f template
+``` 
+to add database to existing db
 
 Note: the user may not have permision, so you could alter the user if you really wanted to.
 

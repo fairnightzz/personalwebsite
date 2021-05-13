@@ -3,24 +3,22 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt-ts",
-    "build": "nuxt-ts build",
-    "start": "nuxt-ts start",
-    "generate": "nuxt-ts generate"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "@nuxt/content": "^1.13.1",
-    "@nuxt/typescript-runtime": "^2.0.1",
     "@nuxtjs/feed": "^2.0.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "aos": "^3.0.0-beta.6",
     "core-js": "^3.8.3",
-    "nuxt": "^2.15.3"
+    "nuxt": "^2.15.6",
+    "prism-themes": "^1.7.0"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.14.12",
-    "@nuxt/typescript-build": "^2.0.4",
-    "@nuxtjs/tailwindcss": "^4.0.2",
-    "@nuxtjs/vuetify": "^1.11.3"
+    "@nuxtjs/vuetify": "^1.11.3",
+    "autoprefixer": "^9.8.6"
   }
 }
