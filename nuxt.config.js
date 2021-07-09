@@ -1,4 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
+
 const createSitemapRoutes = async () => {
   let routes = [];
   const { $content } = require('@nuxt/content')
@@ -53,6 +54,15 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [ '@nuxt/content', '@nuxtjs/feed', '@nuxtjs/sitemap'
   ],
+  hooks: {
+    'content:file:beforeInsert': (document) => {
+      if (document.extension === '.md') {
+        const { minutes } = require('reading-time')(document.text)
+
+        document.readingTime = Math.round(minutes)
+      }
+    }
+  },
   feed () {
     const baseUrlArticles = 'https://zhehaizhang.com/articles'
     const baseLinkFeedArticles = '/feed/articles'
@@ -120,7 +130,7 @@ export default {
     },
     defaultAssets : {
       font: {
-        family: 'Montserrat'
+        family: 'Open Sans'
       }
     }
   },

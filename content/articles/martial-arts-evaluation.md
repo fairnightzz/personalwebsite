@@ -1,5 +1,5 @@
 ---
-title: What Martial World does differently from others
+title: What Martial World does differently
 description: Why I think Martial World is one of the best martial arts novels everyone should try at least once.
 img: https://cdn.novelupdates.com/images/2018/04/Martial-World.jpg
 alt: Martial World
@@ -11,13 +11,14 @@ tags:
   - novels
 date: 2021-03-23
 ---
-# Evaluation: What Martial World does differently from others
+# Evaluation: What Martial World does differently
+[comment]: <img align="right" class="pa-2" src="https://static.wikia.nocookie.net/martial-world/images/7/73/Xuan_Wuji.jpg">
 
 Imagine it is Ancient China. Amongst the billions of people living in this era, you are one of the poorest. Every day, the greatest struggle is not to get into your dream university, but how to put food onto the table for your grandparents. Wherever you go, the stink of your unwashed shirt and lack of status in the city is like a heavy anvil pressing down on you, forcing you to bow your head to corrupt officials and rich people, and your only option is to grit your teeth and endure the shame. That is, one day, you stumble upon a mysterious object by some obscure cornfield. It appears ordinary and can sell for a few bucks at your local flea market, but with some gut feeling you hold onto it. Later on, you realize that this “mysterious object” can actually teach something called martial arts, something commoners wouldn’t be able to get a hold of. With the help of the object, you are opened to a whole new aspect in life- by training in martial arts techniques, consuming pills and elixirs and undergoing tribulations, you can improve your health, increase longevity, and grow powerful enough to the point where you can split mountains with a strike of your hand. With this stroke of fortune, you are determined to become powerful enough so that no one can bully your family ever again!  
 
  
 
-This is the overall premise of a martial arts novel, where the protagonist embarks on a path of martial arts to fulfil their goal. Although martial arts novels may seem fairly niche, there’s been many popular novels and films based on Chinese mythology almost everywhere: Sun Wukong was in The Journey to the West, which was published in the 16th century, while Xingtian the General, Fuxi, and Nuwa were in Desolate Era, which was published in the 21st century. With such a common trope, most people tend to think that new novels based on martial arts are unoriginal and repetitive, which in turn lacks potential for the appeal to grow any larger for years to come. This begs the question: with such a competitive market for this type of genre, what makes a martial arts novel worth reading? Although it may seem childish and bizarre to readers initially, the martial arts novel Martial World, successfully brings out the best of its genre through logical storytelling, elaborate character development, and by having a distinct moral standing. 
+This is the overall premise of a martial arts novel, where the protagonist embarks on a path of martial arts to fulfil their goal. Although martial arts novels may seem fairly niche, there’s been many popular novels and films based on Chinese mythology almost everywhere: Sun Wukong was in The Journey to the West, which was published in the 16th century, while Xingtian the General, Fuxi, and Nuwa appeared in Desolate Era, which was published in the 21st century. With such a common trope, most people tend to think that new novels based on martial arts are unoriginal and repetitive, which in turn lacks potential for the appeal to grow any larger for years to come. This begs the question: with such a competitive market for this type of genre, what makes a martial arts novel worth reading? Although it may seem childish and bizarre to readers initially, the martial arts novel Martial World, successfully brings out the best of its genre through logical storytelling, elaborate character development, and by having a distinct moral standing. 
 
  
 

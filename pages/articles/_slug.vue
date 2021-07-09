@@ -3,9 +3,12 @@
     :title="doc.title" 
     backLink="/blog"
     :date="doc.date"
+    :imageLink="doc.img"
+    :readingTime="doc.readingTime"
+    :description="doc.description"
   >
   <v-row align="center" justify="center">
-    <v-col cols="10" class="ma-2">
+    <v-col xl="4" lg="6" md="6" sm="10" class="ma-2">
       <nuxt-content :document="doc" />
     </v-col>
   </v-row>
@@ -15,6 +18,12 @@
 
 <script>
 export default {
+  data: () => {
+    return {
+      readTime: 0
+    }
+  },
+ 
   head() {
     return {
       title: `${this.doc.title}`,
@@ -29,3 +38,11 @@ export default {
   }
 }
 </script>
+
+<style>
+
+.nuxt-content {
+  font-size: 14pt;
+}
+
+</style>

@@ -82,10 +82,10 @@
  
       <v-col sm="8" xs="8" md="4" lg="4" >
         <v-carousel cycle :interval="3000" hide-delimiters hide-delimiter-background :show-arrows="false" class="ma-0 pa-0">
-          <v-carousel-item eager  contain src="/profile.jpg"></v-carousel-item>
-          <v-carousel-item eager contain src="/hackathons/masseyhacks.jpg"></v-carousel-item>
-          <v-carousel-item eager contain src="/hobbies/digitalcircuits.png"></v-carousel-item>
-          <v-carousel-item eager contain src="/explore/canoe.jpg"></v-carousel-item>
+          <v-carousel-item contain src="/profile.jpg"></v-carousel-item>
+          <v-carousel-item contain src="/hackathons/masseyhacks.jpg"></v-carousel-item>
+          <v-carousel-item contain src="/hobbies/digitalcircuits.png"></v-carousel-item>
+          <v-carousel-item contain src="/explore/canoe.jpg"></v-carousel-item>
         </v-carousel>
       </v-col>
    </v-row>
@@ -127,7 +127,7 @@
         <v-hover v-slot="{hover}" v-for="(project,index) in projects" :key="index">
           <v-col  xs="8" sm="6" md = "4" lg="4">
             <v-card flat data-aos="flip-up" :href ="project.link" target="_blank">
-              <v-img :src="project.imgsrc" eager height="400">
+              <v-img :src="project.imgsrc" height="400">
                 <v-expand-transition>
                   <v-overlay v-if="hover" absolute color="purple" opacity="0.8">
                     <v-card-text  align="center" class="white--text body-1">
@@ -154,7 +154,7 @@
         <v-hover v-slot="{hover}" v-for="(experience,index) in experiences" :key="index">
           <v-col  xs="8" sm="6" md = "4" lg="4">
             <v-card flat data-aos="flip-up" :href ="experience.link" target="_blank">
-              <v-img :src="experience.imgsrc" eager height="400">
+              <v-img :src="experience.imgsrc" height="400">
                 <v-expand-transition>
                   <v-overlay v-if="hover" absolute color="purple" opacity="0.8">
                     <v-card-text link align="center" class="white--text body-1">

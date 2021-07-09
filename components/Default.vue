@@ -11,23 +11,35 @@
     <main>
       <!-- only posts have the back button -->
       <v-row align="center" justify="center">
-          <v-col cols="10" class="ma-2">
+          <v-col xl="4" lg="6" md="6" sm="10" class="ma-2">
             <BackButton v-if="backLink" :backLink="backLink" class="my-2" />
 
             <!-- page does not have to have a title -->
             <v-row align="center" justify="center" class = "my-2">
-            <h1 class="display-2 font-weight-bold text-center mt-6" v-if="title">{{ title }}</h1>
-            <v-btn icon target="_blank" href="http://zhehaizhang.com/feed/articles/rss.xml">
-                <v-icon>mdi-rss</v-icon>
-            </v-btn>
+              <h1 class="display-2 font-weight-bold text-center mt-6" v-if="title">{{ title }}</h1>
+              <v-btn icon target="_blank" href="http://zhehaizhang.com/feed/articles/rss.xml">
+                  <v-icon>mdi-rss</v-icon>
+              </v-btn>
+            </v-row>
+            <v-row align="center" justify="center">
+              <p class="text-h6">{{description}}</p>
             </v-row>
             <!-- not all pages have dates, only posts do -->
-            <div v-if="date" class="date">
-                Last updated:
-                <b>{{ dateDisplay }}</b>
-            </div>
+            <v-row v-if="date" class="mt-4 text-subtitle-2" align="center" justify="center">
+              <p class="font-weight-medium">
+                Zhehai Zhang | &nbsp;
+              </p>
+              <p class="font-weight-medium">
+                 {{ dateDisplay }} | &nbsp;
+              </p>
+              <p class="font-weight-medium">
+                {{ readingTime }} min read
+              </p>
+            </v-row>
+            <v-img v-if="imageLink" :src="imageLink" max-height="400" class="mt-4">
+            </v-img>
           </v-col>
-      </v-row>
+     </v-row>
       
     <slot></slot>
     </main>
@@ -46,6 +58,18 @@ export default {
       required: false,
     },
     date: {
+      type: String,
+      required: false,
+    },
+    imageLink: {
+      type: String,
+      required: false,
+    },
+    readingTime: {
+      type: Number,
+      required: false,
+    },
+    description: {
       type: String,
       required: false,
     }
