@@ -8,7 +8,7 @@
     :description="doc.description"
   >
   <v-row align="center" justify="center">
-    <v-col xl="4" lg="6" md="6" sm="10" class="ma-2">
+    <v-col xl="4" lg="6" md="6" sm="8" cols="8" class="pa-2">
       <nuxt-content :document="doc" />
     </v-col>
   </v-row>

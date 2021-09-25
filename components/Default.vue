@@ -11,7 +11,7 @@
     <main>
       <!-- only posts have the back button -->
       <v-row align="center" justify="center">
-          <v-col xl="4" lg="6" md="6" sm="10" class="ma-2">
+          <v-col xl="4" lg="6" md="6" sm="8" cols="8" class="ma-2">
             <BackButton v-if="backLink" :backLink="backLink" class="my-2" />
 
             <!-- page does not have to have a title -->
