@@ -47,6 +47,8 @@ export default {
 .nuxt-content img {
     max-width: 100%;
     max-height:100%;
+    min-height: 100%;
+    min-width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
   }
