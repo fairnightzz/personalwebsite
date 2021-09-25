@@ -2,7 +2,7 @@
 
     <div justify="space-between" align="center" class="ma-2">
         <v-hover v-slot="{hover}">
-          <v-card width="600" height="400" :elevation="hover ? 12 : 2" class="transition-swing">
+          <v-card :width="width" :height="height" :elevation="hover ? 12 : 2" class="transition-swing">
             <nuxt-link class="post-container" :to="`/articles/${slug}`">
               <v-img :src="img" height="300" max-width="600" class="align-end">
               </v-img>
@@ -35,6 +35,26 @@ export default {
       default: "/"
     }
   },
+  computed: {
+    width () {
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs': return 300
+        case 'sm': return 350
+        case 'md': return 400
+        case 'lg': return 400
+        case 'xl': return 400
+      }
+    },
+    height () {
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs': return 470
+        case 'sm': return 450
+        case 'md': return 400
+        case 'lg': return 400
+        case 'xl': return 400
+      }
+    }
+  }
 }
 </script>
 
