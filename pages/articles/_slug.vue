@@ -44,5 +44,10 @@ export default {
 .nuxt-content {
   font-size: 14pt;
 }
-
+.nuxt-content img {
+    max-width: 100%;
+    max-height:100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 </style>

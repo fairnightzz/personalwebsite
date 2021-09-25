@@ -130,7 +130,7 @@ export default {
     },
     defaultAssets : {
       font: {
-        family: 'Open Sans'
+        family: 'Inter'
       }
     }
   },
