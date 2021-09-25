@@ -18,9 +18,10 @@ date: 2021-09-10
 
 # Shang Chi Movie Review
 
-<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shang-chi-1629920077.jpeg"/>
 
 As an avid fan of the Marvel Cinematic Universe, I love a good superhero movie. *Especially* when it comes to tear jerking scenes, deep origin stories, and of course, hot-headed action, I'm always at the edge of my seat, wanting more. I only recently started posting more in my blog, in an effort record interesting moments in my life and learn how to write things based on intuition. This movie particularly, is an important milestone for Asian representation in Marvel films, which I find to be monumental in the pursuit of diversity and culture, which is part of the reason I'm writing a review for it in the first place. Without further ado, let's get started!
+
+<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/shang-chi-1629920077.jpeg"/>
 
 ## How this review is structured
 
