@@ -82,11 +82,11 @@ One thing I loved the most about the movie was the dialogue. Being someone immig
 
 # 6. Cinematography: 9/10
 
-<img src="../../blog/bamboo.png" height=300></img>
+<img src="../../blog/bamboo.png"></img>
 
 I'm no expert, but the camera work was awesome. The bamboo building scene in particular paid homage to a similar Rush hour scene starrring Jackie Chan. Another thing I loved was how many of the fight scenes were continuous shots. This shows how much work the actors put in practicing realistic fights and well planned choreography.
 
-<img src="../../blog/jackie.png" height=300></img>
+<img src="../../blog/jackie.png"></img>
 
 # 7. Editing and Effects: 10/10
 
@@ -99,3 +99,5 @@ As usual, Marvel did a great job with the effects. I have to say though, they re
 I'm not going to lie, the music slapped. Other than the Avengers main soundtrack, the rest are lost in the records of history. Excluding the Guardians of the Galaxy, of course, where James Gunn revitalized a lot of popular songs back in the day, no other Marvel movie has gotten this level of marketing for the soundtracks of its films. Being a big fan of 88rising, (a music label primarily for Asian American artists), I loved how close Marvel and 88rising worked in collaboration to make such bangers. So if you're ever interested in listening, here it is:
 
 <iframe src="https://open.spotify.com/embed/album/2kAqjStKcwlDD59H0llhGC" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+# Overall Score: 8.9/10

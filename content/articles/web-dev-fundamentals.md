@@ -1,5 +1,5 @@
 ---
-title: Making a TODO webapp from scratch
+title: Building a TODO Webapp
 description: Build a simple todo list and learn about APIs!
 img: https://play-lh.googleusercontent.com/HUuQc4Zpl6x7fUyX-jFMmcuUbW77REw4UKl5rfhHfP4VY6ctBU1w1I_RZWsXaojFgIo
 alt: TODO List

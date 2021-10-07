@@ -17,6 +17,9 @@
 
 
 <script>
+import Vue from 'vue'
+import AppCopyButton from '~/components/app/AppCopyButton'
+
 export default {
   data: () => {
     return {
@@ -35,6 +38,16 @@ export default {
   async asyncData({$content, params}) {
     const doc = await $content(`articles/${params.slug}`).fetch();
     return { doc }
+  },
+  mounted () {
+    setTimeout(() => {
+      const blocks = document.getElementsByClassName('nuxt-content-highlight')
+      for (const block of blocks) {
+        const CopyButton = Vue.extend(AppCopyButton)
+        const component = new CopyButton().$mount()
+        block.appendChild(component.$el)
+      }
+    }, 100)
   }
 }
 </script>
@@ -51,5 +64,14 @@ export default {
     min-width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+.nuxt-content .nuxt-content-highlight {
+  position: relative;
+  }
+.nuxt-content .nuxt-content-highlight .copy {
+  position: absolute;
+  right: 0px;
+  top: 0px;
   }
 </style>
