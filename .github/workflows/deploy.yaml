@@ -1,0 +1,26 @@
+name: Deploy Frontend
+on:
+  push:
+    branches: [master]
+    paths:
+      - ./**
+jobs:
+  deploy-frontend-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Pull from GitHub repo
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          USERNAME: ${{ secrets.USERNAME }}
+          PORT: ${{ secrets.PORT }}
+          KEY: ${{ secrets.KEY }}
+          script: |
+            cd /var/www/personalwebsite
+            git pull
+            npm install
+            npm run build
+            pm2 reload 0
