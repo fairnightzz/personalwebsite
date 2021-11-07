@@ -67,8 +67,6 @@ name: Deploy Frontend
 on:
   push:
     branches: [master]
-    paths:
-      - ./**
 jobs:
   deploy-frontend-job:
     runs-on: ubuntu-latest
@@ -82,7 +80,7 @@ jobs:
           host: ${{ secrets.HOST }}
           USERNAME: ${{ secrets.USERNAME }}
           PORT: ${{ secrets.PORT }}
-          KEY: ${{ secrets.KEY }}
+          KEY: ${{ secrets.SSHKEY }}
           script: |
             cd /var/www/personalwebsite
             git pull
