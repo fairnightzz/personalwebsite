@@ -92,6 +92,7 @@ jobs:
 ```
 
 We only want pushes that go to the `master` branch, and this runs the `deploy-frontend-job` job.
+Note that you can do whatever branch you want.
 We are calling a `ssh-action`, which runs the script in the vps once we have logged on.
 
 I am going to the directory, pulling from GitHub, installing packages, and then reloading pm2, which I'm using to serve.
