@@ -24,7 +24,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: "Hi, I'm Zhehai! I've dabbled in augmented reality applications, command line interfaces , tons of web apps, REST apis, and database management." },
-      { hid: 'og:image', property: 'og:image', content: '/codereach.JPG'},
+      { hid: 'og:image', property: 'og:image', content: '/background.jpg'},
       { hid: 'twitter:card', name: 'twitter:card', content:'summary_large_image'},
       { hid: 'keywords', name: 'keywords', content: 'Zhehai Zhang, computer science, programming, software, development, uwaterloo'}
     ],
