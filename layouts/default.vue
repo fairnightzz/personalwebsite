@@ -9,7 +9,7 @@
       >
       <v-tab :ripple="false" nuxt to="/">Home</v-tab>
       <v-tab :ripple="false" nuxt to="/blog">Blog</v-tab>
-      <v-tab :ripple="false"  target="blank" href="/resume/Zhehai Zhang.pdf">Resume</v-tab>
+      <v-tab :ripple="false"  link target="blank" href="/resume/Zhehai_Zhang_Resume.pdf">Resume</v-tab>
       </v-tabs>
       </v-app-bar>
         <nuxt />

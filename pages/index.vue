@@ -184,6 +184,8 @@ export default {
   data: () => {
     return {
       projects: [
+        {name: "ShopAdvisr", description: "As university students, we are finally able to experience moving out and living on our own. Something we've realized is that shopping is an inescapable part of adult life. It can be tedious to figure out what to buy in the moment, and keeping track of items after you've decided and then searching for them throughout the store is no easy feat. Hence, we've decided to design an app that makes shopping cheap, convenient and smart.", imgsrc: "shopadvisr.gif", link: "https://devpost.com/software/shopadvisr"},
+        {name: "WidgetHub", description: "The purpose of WidgetHub is to provide a quick and intuitive way to build plug and play widgets for your own websites. Simply add your handle, customize how you want your widget to look, and paste the code we give you onto your own site.", imgsrc: "widgethub.png", link: "https://devpost.com/software/widgethub"},
         {name: "Subspace", description:"Won HackTheNorth 2020++. Work side-by-side again during COVID? Subspace gives you cloud-based desktops for remote collaboration, allowing you to instantaneously share your computing environment with others.", 
         imgsrc: "subspace.jpg", link: "https://devpost.com/software/subspace"},
         {name: "9it - Version Control System", description: "totally not git! 9it-cli is a lightweight version control system that is intended for individual use.", imgsrc: "9it.png", link: "https://github.com/NaiveGit/9it-cli"},
@@ -204,9 +206,8 @@ export default {
         {name: "TypeScript"},
         {name: "Node.js"},
         {name: "Vue.js"},
-        {name: "Nuxt.js"},
         {name: "React.js"},
-        {name: "PostgreSQL"},
+        {name: "PostgreSQL/MySQL"},
         {name: "REST/GraphQL"},
         {name: "DynamoDB"},
         {name: "Python"},
@@ -214,8 +215,13 @@ export default {
         {name: "Firebase"},
         {name: "Virtual Reality"},
         {name: "Augmented Reality"},
+        {name: "Terraform"},
+        {name: "AWS Services"},
       ],
       experiences: [
+        {name: "D2L Corporation", role: "Software Developer", description:"D2L Labs explores the potential for technology to transform the future of learning. We seek to understand how emerging technologies, such as artificial intelligence (AI), virtual reality (VR), and others, can be leveraged to enable new ways of learning. Our findings serve as an input into our product roadmap and future company direction, and can help our customers understand the implications for their own organizations. Learn more about what we do below.", imgsrc: "d2l.png"},
+        {name: "ToHacks", role: "Developer", description:"TOHacks aims to connect talented youth entrepreneurs, leaders and innovators with the top industry professionals in rising fields of new technologies. Having recently hosted its inaugural hackathon, TOHacks will continue to foster an environment that promises to embolden these students towards pursuing a career in STEAM.", imgsrc: "tohacks.png"},
+        {name: "Bolt Bootcamps", role: "Technical Director", description:"Bolt represents a unique combination of a hackathon and a case competition for students to delve into the world of business technology.", imgsrc: "bolt.png"},
         {name: "CodeReach", role: "Teacher", description:"CodeReach helps create the foundation of computer science for elementary school students. I prepared lesson materials and taught the Python programming language to 30+ students.", imgsrc: "codereach.png"},
         {name: "MasseyHacks VI", role: "Executive", description:"Managed logistics behind workshop livestreams, and designed graphics for the event.", imgsrc: "masseyhacks.png"},
         {name: "Computer Science Club", role: "Junior Leader", description:"Taught competitive programming techniques and algorithms to high school students. Organized local programming competitions on self-hosted online judge.", imgsrc: "csclub.png"},
