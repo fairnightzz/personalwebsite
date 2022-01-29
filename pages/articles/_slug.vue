@@ -31,7 +31,8 @@ export default {
     return {
       title: `${this.doc.title}`,
       meta: [
-        { hid: 'description', name: 'description', content: `${this.doc.description}` }
+        { hid: 'description', name: 'description', content: `${this.doc.description}` },
+        { hid: 'og:image', property: 'og:image', content: `${this.doc.img}`},
       ]
     }
   },
