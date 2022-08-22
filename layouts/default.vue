@@ -69,7 +69,7 @@ export default {
       fixed: false,
       icons: [
         {type: 'mdi-facebook', link: 'https://www.facebook.com/zhehai.zhang/'},
-        {type: 'mdi-linkedin', link: 'https://www.linkedin.com/in/mark-zhehai-zhang-8a6570168/'},
+        {type: 'mdi-linkedin', link: 'https://www.linkedin.com/in/zhehai/'},
         {type: 'mdi-instagram', link: 'https://www.instagram.com/zhehai_zhang/'},
         {type: 'mdi-github', link: 'https://github.com/fairnightzz'},
       ],

@@ -45,7 +45,7 @@
             <v-row class="fill-height ma-2" align="center" justify="center" >
             <v-card class="ma-2">
               <v-card-text>
-              <h3 :class="$vuetify.breakpoint.smAndDown ? 'title' : 'headline'">I'm a 2B Computer Science student at the University of Waterloo!</h3>
+              <h3 :class="$vuetify.breakpoint.smAndDown ? 'title' : 'headline'">I'm a 3A Computer Science student at the University of Waterloo!</h3>
               </v-card-text>
             </v-card>
             </v-row>
