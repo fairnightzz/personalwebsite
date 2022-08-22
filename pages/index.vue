@@ -219,6 +219,7 @@ export default {
         {name: "AWS Services"},
       ],
       experiences: [
+        {name: "Splunk", role: "Fullstack IoT Software Engineer", description:"Splunk is the data platform that powers enterprise observability, unified security and limitless custom applications in hybrid environments.", imgsrc: "splunk.jpg"},
         {name: "D2L Corporation", role: "Software Developer", description:"D2L Labs explores the potential for technology to transform the future of learning. We seek to understand how emerging technologies, such as artificial intelligence (AI), virtual reality (VR), and others, can be leveraged to enable new ways of learning. Our findings serve as an input into our product roadmap and future company direction, and can help our customers understand the implications for their own organizations. Learn more about what we do below.", imgsrc: "d2l.png"},
         {name: "ToHacks", role: "Developer", description:"TOHacks aims to connect talented youth entrepreneurs, leaders and innovators with the top industry professionals in rising fields of new technologies. Having recently hosted its inaugural hackathon, TOHacks will continue to foster an environment that promises to embolden these students towards pursuing a career in STEAM.", imgsrc: "tohacks.png"},
         {name: "Bolt Bootcamps", role: "Technical Director", description:"Bolt represents a unique combination of a hackathon and a case competition for students to delve into the world of business technology.", imgsrc: "bolt.png"},
