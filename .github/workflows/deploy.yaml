@@ -19,7 +19,9 @@ jobs:
           KEY: ${{ secrets.SSHKEY }}
           script: |
             cd /var/www/personalwebsite
-            git pull
+            git pull --rebase
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
             nvm use
             npm install
             npm run build
