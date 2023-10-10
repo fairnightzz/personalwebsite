@@ -1,7 +1,7 @@
 ---
 title: VPS Tips and Tricks
 description: Some tips that will improve your experience in setting up a vps
-img: https://www.atlantic.net/wp-content/themes/anet/img/vps-hosting/vps-hosting.png
+img: https://www.global-dms.com/wp-content/uploads/2022/04/vps-hosting-534x321.png
 alt: VPS
 author: 
   name: Zhehai Zhang
