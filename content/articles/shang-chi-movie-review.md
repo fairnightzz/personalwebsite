@@ -82,11 +82,11 @@ One thing I loved the most about the movie was the dialogue. Being someone immig
 
 # 6. Cinematography: 9/10
 
-<img src="../../blog/bamboo.png"></img>
+<img src="../../blog/bamboo.webp"></img>
 
 I'm no expert, but the camera work was awesome. The bamboo building scene in particular paid homage to a similar Rush hour scene starrring Jackie Chan. Another thing I loved was how many of the fight scenes were continuous shots. This shows how much work the actors put in practicing realistic fights and well planned choreography.
 
-<img src="../../blog/jackie.png"></img>
+<img src="../../blog/jackie.webp"></img>
 
 # 7. Editing and Effects: 10/10
 

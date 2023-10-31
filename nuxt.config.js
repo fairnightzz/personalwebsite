@@ -24,9 +24,9 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: "Hi, I'm Zhehai! I've dabbled in augmented reality applications, command line interfaces , tons of web apps, REST apis, and database management." },
-      { hid: 'og:image', property: 'og:image', content: '/background.jpg'},
-      { hid: 'twitter:card', name: 'twitter:card', content:'summary_large_image'},
-      { hid: 'keywords', name: 'keywords', content: 'Zhehai Zhang, computer science, programming, software, development, uwaterloo'}
+      { hid: 'og:image', property: 'og:image', content: '/background.webp' },
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+      { hid: 'keywords', name: 'keywords', content: 'Zhehai Zhang, computer science, programming, software, development, uwaterloo' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -52,7 +52,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [ '@nuxt/content', '@nuxtjs/feed', '@nuxtjs/sitemap'
+  modules: ['@nuxt/content', '@nuxtjs/feed', '@nuxtjs/sitemap'
   ],
   hooks: {
     'content:file:beforeInsert': (document) => {
@@ -63,7 +63,7 @@ export default {
       }
     }
   },
-  feed () {
+  feed() {
     const baseUrlArticles = 'https://zhehaizhang.com/articles'
     const baseLinkFeedArticles = '/feed/articles'
     const feedFormats = {
@@ -113,7 +113,7 @@ export default {
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
-    treeShake:true,
+    treeShake: true,
     theme: {
       dark: false,
       themes: {
@@ -128,7 +128,7 @@ export default {
         }
       }
     },
-    defaultAssets : {
+    defaultAssets: {
       font: {
         family: 'Inter'
       }

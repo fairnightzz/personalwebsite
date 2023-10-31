@@ -1,7 +1,7 @@
 ---
 title: My First Blog Post
 description: Intro to my website and blog using cool stuff!
-img: ../../explore/first.jpg
+img: ../../blog/explore/first.webp
 alt: my first blog post
 author: 
   name: Zhehai Zhang
@@ -26,7 +26,7 @@ Hey guys, this is my first blog post of 2021. I hope to update this weekly (or m
 * `code` 
 * [A link](https://zhehaizhang.com/blog)
 
-<img src="../../explore/me.JPG"></img>
+<img src="../../blog/explore/me.webp"></img>
 ```js
 export default {
   nuxt: "is the best"
