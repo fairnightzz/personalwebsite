@@ -61,8 +61,9 @@
             <v-row class="fill-height ma-2" align="center" justify="center">
               <v-card class="ma-2">
                 <v-card-text>
-                  <h3 :class="$vuetify.breakpoint.smAndDown ? 'title' : 'headline'">I love starting new projects and
-                    trying out new technologies.</h3>
+                  <h3 :class="$vuetify.breakpoint.smAndDown ? 'title' : 'headline'">Recently, I've been focusing on ML
+                    and AI related work. I'm currently doing a URA under Professor Pascal Poupart, working on
+                    reinforcement learning.</h3>
                 </v-card-text>
               </v-card>
             </v-row>
