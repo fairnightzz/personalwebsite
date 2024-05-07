@@ -2,17 +2,20 @@
   <div>
     <v-img :src="require('~/assets/background.webp')" height="100vh" class="mb-16" eager>
       <v-overlay absolute color="black" opacity="0.5">
-        <v-row>
+        <v-row align="center" justify="center">
           <v-col cols="8" class="ma-2">
             <h1 class="display-3 font-weight-medium">
               Hi, I'm Zhehai Zhang.
             </h1>
           </v-col>
         </v-row>
-        <v-row>
+        <v-row align="center" justify="center">
           <v-col cols="8" class="ma-2">
             <h2 data-aos="flip-up" class="display-1 font-weight-regular">
-              Welcome to my website.
+              I'm a Senior Computer Science Student at the University of Waterloo interested in ML/AI and full stack
+              engineering.
+              In the past, I've interned at LinkedIn, Splunk, Vector, Bitgo, and D2L.
+              Welcome to my website!
             </h2>
           </v-col>
         </v-row>
@@ -88,7 +91,7 @@
           class="ma-0 pa-0">
           <v-carousel-item contain eager :src="require('~/assets/carousel/niagara.webp')"></v-carousel-item>
           <v-carousel-item contain eager :src="require('~/assets/carousel/ar_vr.webp')"></v-carousel-item>
-          <v-carousel-item contain eager :src="require('~/assets/carousel/nl.webp')"></v-carousel-item>
+          <v-carousel-item contain eager :src="require('~/assets/carousel/ml.webp')"></v-carousel-item>
           <v-carousel-item contain eager :src="require('~/assets/carousel/nature.webp')"></v-carousel-item>
         </v-carousel>
       </v-col>
