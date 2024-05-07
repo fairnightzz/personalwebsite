@@ -51,7 +51,8 @@
             <v-row class="fill-height ma-2" align="center" justify="center">
               <v-card class="ma-2">
                 <v-card-text>
-                  <h3 :class="$vuetify.breakpoint.smAndDown ? 'title' : 'headline'">I love competing in hackathons to
+                  <h3 :class="$vuetify.breakpoint.smAndDown ? 'title' : 'headline'">I love competing/mentoring in
+                    hackathons to
                     challenge my critical thinking and creativity.</h3>
                 </v-card-text>
               </v-card>
@@ -73,7 +74,7 @@
               <v-card class="ma-2">
                 <v-card-text>
                   <h3 :class="$vuetify.breakpoint.smAndDown ? 'title' : 'headline'">When I'm not coding, I'm either
-                    swimming or playing volleyball!</h3>
+                    swimming, playing volleyball, or exploring nature!</h3>
                 </v-card-text>
               </v-card>
             </v-row>
@@ -85,10 +86,10 @@
       <v-col sm="10" xs="10" md="6" lg="6">
         <v-carousel cycle :interval="4000" hide-delimiters hide-delimiter-background :show-arrows="false"
           class="ma-0 pa-0">
-          <v-carousel-item contain eager :src="require('~/assets/carousel/profile.webp')"></v-carousel-item>
-          <v-carousel-item contain eager :src="require('~/assets/carousel/masseyhacks.webp')"></v-carousel-item>
-          <v-carousel-item contain eager :src="require('~/assets/carousel/digitalcircuits.webp')"></v-carousel-item>
-          <v-carousel-item contain eager :src="require('~/assets/carousel/swim.webp')"></v-carousel-item>
+          <v-carousel-item contain eager :src="require('~/assets/carousel/niagara.webp')"></v-carousel-item>
+          <v-carousel-item contain eager :src="require('~/assets/carousel/ar_vr.webp')"></v-carousel-item>
+          <v-carousel-item contain eager :src="require('~/assets/carousel/nl.webp')"></v-carousel-item>
+          <v-carousel-item contain eager :src="require('~/assets/carousel/nature.webp')"></v-carousel-item>
         </v-carousel>
       </v-col>
     </v-row>
