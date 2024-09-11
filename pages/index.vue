@@ -12,10 +12,8 @@
         <v-row align="center" justify="center">
           <v-col cols="8" class="ma-2">
             <h2 data-aos="flip-up" class="display-1 font-weight-regular">
-              I'm a Senior Computer Science Student at the University of Waterloo interested in ML/AI and full stack
-              engineering.
-              In the past, I've interned at LinkedIn, Splunk, Vector, Bitgo, and D2L.
-              Welcome to my website!
+              I'm a Senior Computer Science Student at UWaterloo interested in ML/AI and full stack.
+              I am currently looking for 2025 New Grad Positions!
             </h2>
           </v-col>
         </v-row>
@@ -225,7 +223,7 @@ export default {
         { name: "REST/GraphQL" },
         { name: "Numpy" },
         { name: "Python" },
-        { name: "Web Scraping" },
+        { name: "PyTorch" },
         { name: "Firebase" },
         { name: "Virtual Reality" },
         { name: "Augmented Reality" },
@@ -233,22 +231,24 @@ export default {
         { name: "AWS Services" },
       ],
       experiences: [
-        { name: "LinkedIn", role: "Software Engineer Intern", description: "Today, LinkedIn leads a diversified business with revenues from membership subscriptions, advertising sales and recruitment solutions under the leadership of Ryan Roslansky. In December 2016, Microsoft completed its acquisition of LinkedIn, bringing together the world’s leading professional cloud and the world’s leading professional network.", imgsrc: "linkedin.webp" },
+        { name: "Meta", role: "Software Engineer Intern", description: "Profile Systems Infra", imgsrc: "meta.webp" },
+        { name: "LinkedIn (2024)", role: "Software Engineer Intern", description: "Seeker Coach Team", imgsrc: "linkedin.webp" },
+        { name: "LinkedIn (2023)", role: "Software Engineer Intern", description: "Recruiter Charts Team", imgsrc: "linkedin.webp" },
         {
           name: "BitGo", role: "Software Engineer Intern", description: "BitGo provides the most secure and scalable solutions for the digital asset economy, offering regulated custody, borrowing and lending, and core infrastructure to investors and builders alike.", imgsrc: "bitgo.webp"
         },
         { name: "Splunk", role: "Fullstack IoT Software Engineer Intern", description: "Splunk is the data platform that powers enterprise observability, unified security and limitless custom applications in hybrid environments.", imgsrc: "splunk.webp" },
         { name: "D2L Corporation", role: "Software Developer Intern", description: "D2L Labs explores the potential for technology to transform the future of learning. We seek to understand how emerging technologies, such as artificial intelligence (AI), virtual reality (VR), and others, can be leveraged to enable new ways of learning. Our findings serve as an input into our product roadmap and future company direction, and can help our customers understand the implications for their own organizations. Learn more about what we do below.", imgsrc: "d2l.webp" },
         { name: "ToHacks", role: "Developer", description: "TOHacks aims to connect talented youth entrepreneurs, leaders and innovators with the top industry professionals in rising fields of new technologies. Having recently hosted its inaugural hackathon, TOHacks will continue to foster an environment that promises to embolden these students towards pursuing a career in STEAM.", imgsrc: "tohacks.webp" },
-        { name: "Bolt Bootcamps", role: "Technical Director", description: "Bolt represents a unique combination of a hackathon and a case competition for students to delve into the world of business technology.", imgsrc: "bolt.webp" },
-        { name: "CodeReach", role: "Teacher", description: "CodeReach helps create the foundation of computer science for elementary school students. I prepared lesson materials and taught the Python programming language to 30+ students.", imgsrc: "codereach.webp" },
-        { name: "MasseyHacks VI", role: "Executive", description: "Managed logistics behind workshop livestreams, and designed graphics for the event.", imgsrc: "masseyhacks.webp" },
-        { name: "Computer Science Club", role: "Junior Leader", description: "Taught competitive programming techniques and algorithms to high school students. Organized local programming competitions on self-hosted online judge.", imgsrc: "csclub.webp" },
-        { name: "Chess Club", role: "Leader", description: "Organized official qualifier tournaments for the annual Ontario Chess Championships. Lead the team to win the Ontario High School Chess Tournament 2 years in a row.", imgsrc: "chess.webp" },
-        { name: "MIT Media Lab", role: "Participant", description: "Developed augmented reality systems in C# using HTC Vive Pro headset and Leap Motion Orion for dynamic depth analysis.", imgsrc: "mit.webp" },
-        { name: "City of Windsor & Lasalle", role: "Swim Instructor", description: "Taught swimming lessons for over 10 swimmer levels at the Lifesaving Society Standard.", imgsrc: "swim.webp" },
-        { name: "CaYPT Bronze Medalist", role: "Competitor", description: "National Physics Competition where our team was tasked to solve 10 open-ended physics problems by conducting research, experiments, and simulations.", imgsrc: "caypt.webp" },
-        { name: "SHAD Enrichment Program", role: "Participant", description: "Lead a business team for Flood Watch, an app designed to help people in flood prone areas in times of need.", imgsrc: "shad.webp" },
+        // { name: "Bolt Bootcamps", role: "Technical Director", description: "Bolt represents a unique combination of a hackathon and a case competition for students to delve into the world of business technology.", imgsrc: "bolt.webp" },
+        // { name: "CodeReach", role: "Teacher", description: "CodeReach helps create the foundation of computer science for elementary school students. I prepared lesson materials and taught the Python programming language to 30+ students.", imgsrc: "codereach.webp" },
+        // { name: "MasseyHacks VI", role: "Executive", description: "Managed logistics behind workshop livestreams, and designed graphics for the event.", imgsrc: "masseyhacks.webp" },
+        // { name: "Computer Science Club", role: "Junior Leader", description: "Taught competitive programming techniques and algorithms to high school students. Organized local programming competitions on self-hosted online judge.", imgsrc: "csclub.webp" },
+        // { name: "Chess Club", role: "Leader", description: "Organized official qualifier tournaments for the annual Ontario Chess Championships. Lead the team to win the Ontario High School Chess Tournament 2 years in a row.", imgsrc: "chess.webp" },
+        // { name: "MIT Media Lab", role: "Participant", description: "Developed augmented reality systems in C# using HTC Vive Pro headset and Leap Motion Orion for dynamic depth analysis.", imgsrc: "mit.webp" },
+        // { name: "City of Windsor & Lasalle", role: "Swim Instructor", description: "Taught swimming lessons for over 10 swimmer levels at the Lifesaving Society Standard.", imgsrc: "swim.webp" },
+        // { name: "CaYPT Bronze Medalist", role: "Competitor", description: "National Physics Competition where our team was tasked to solve 10 open-ended physics problems by conducting research, experiments, and simulations.", imgsrc: "caypt.webp" },
+        // { name: "SHAD Enrichment Program", role: "Participant", description: "Lead a business team for Flood Watch, an app designed to help people in flood prone areas in times of need.", imgsrc: "shad.webp" },
       ]
     }
   },
